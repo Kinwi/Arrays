@@ -13,6 +13,36 @@ namespace Ejercicio13
 
            */
 
+            
+
+            int[] arrayNumeros = new int[20];
+            int[] arrayFrecuencias = new int[10];
+
+            Random aleatorio = new Random();
+
+            for (int i = 0; i < arrayNumeros.Length; i++)
+            {
+                int numeros = aleatorio.Next(1, 10);
+                arrayNumeros[i] = numeros;
+
+            }
+            for (int j = 0; j < arrayNumeros.Length; j++)
+            {
+                // En el arrayNumeros los numeros entran aleatorios
+                // Ejemplo 9,8,9,2,8,6,5,4,7 ....
+
+                // En el arrayFrecuencias los numeros entran posicionados marcando cuantos hay
+                // Ejemplo 9 con frecuencia 2 , 7 con frecuencia 4 etc
+                arrayNumeros[arrayFrecuencias[j]]++;
+                    
+                }
+
+
+            
+
+            Console.WriteLine(arrayFrecuencias[0] + "-------------" + arrayNumeros[0]);
+
+
         }
     }    
 }

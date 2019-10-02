@@ -38,6 +38,15 @@ namespace Ejercicio12
             {
                 Console.WriteLine(palabra);
 
-        }  }
+                /*Array.sort(arrayPalabras)
+                 * for(int i = 0; i <palabra.Length  i++)
+                 * 
+                 * {
+                 *      Console.Writeline(palabra[i]);
+                 * }
+                 * 
+               */
+            }
+        }
     }
 }

@@ -17,6 +17,7 @@ namespace Ejercicio6
             Console.WriteLine("Escribe un numero del 1 al 12");
             int numero = Convert.ToInt32(Console.ReadLine());
 
+            /*
             switch (numero)
 
             {
@@ -63,6 +64,11 @@ namespace Ejercicio6
                 default:
                     Console.WriteLine("El valor introducido no es correcto");
                     break;
-         }  }
+            }
+            */
+
+            Console.WriteLine(meses[numero - 1]);
+
+        }
     }
 }

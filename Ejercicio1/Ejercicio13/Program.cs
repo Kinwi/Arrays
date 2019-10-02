@@ -13,34 +13,24 @@ namespace Ejercicio13
 
            */
 
-            
-
-            int[] arrayNumeros = new int[20];
-            int[] arrayFrecuencias = new int[10];
-
             Random aleatorio = new Random();
-
-            for (int i = 0; i < arrayNumeros.Length; i++)
+            int[] numerosRandom = new int[20];
+            int[] posicion = new int[10];
+            for (int i = 0; i < numerosRandom.Length; i++)
             {
-                int numeros = aleatorio.Next(1, 10);
-                arrayNumeros[i] = numeros;
-
+                numerosRandom[i] = aleatorio.Next(1, 10);
+                posicion[numerosRandom[i]]++;
             }
-            for (int j = 0; j < arrayNumeros.Length; j++)
+
+            for (int i = 0; i < numerosRandom.Length; i++) 
             {
-                // En el arrayNumeros los numeros entran aleatorios
-                // Ejemplo 9,8,9,2,8,6,5,4,7 ....
-
-                // En el arrayFrecuencias los numeros entran posicionados marcando cuantos hay
-                // Ejemplo 9 con frecuencia 2 , 7 con frecuencia 4 etc
-                arrayNumeros[arrayFrecuencias[j]]++;
-                    
-                }
-
-
-            
-
-            Console.WriteLine(arrayFrecuencias[0] + "-------------" + arrayNumeros[0]);
+                Console.WriteLine(i + "\t" + numerosRandom[i]);
+            }
+            Console.WriteLine();
+            for (int i = 0; i < posicion.Length; i++)
+            {
+                Console.WriteLine($"El {i} aparece {posicion[i]} veces");
+            }
 
 
         }
